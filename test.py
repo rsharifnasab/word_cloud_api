@@ -7,16 +7,19 @@ from flask import send_file
 from src.abr import main as abr_main
 
 app = Flask(__name__)
+app.debug = True
 
 @app.route('/')
 def hello_world():
     return 'Hello, welcome to this service!'
 
-@app.route('/text')
+@app.route('/text2')
 def create_from_text():
-	abr_main("salam salam")
-	return "text"
-	return send_file('./out/text.png', mimetype='image/png')
+	with app.app_context():
+	    print("salam")
+	    abr_main("google gggggg")
+	    #return "text"
+	    return send_file('/home/rsharifnasab/word_cloud/out/text.png', mimetype='image/png')
 
 
 create_from_text()
