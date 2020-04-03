@@ -19,7 +19,7 @@ def create_from_text():
 	    print("salam")
 	    abr_main("google gggggg")
 	    #return "text"
-	    return send_file('out/text.png', mimetype='image/png')
+	    return send_file('/home/rsharifnasab/word_cloud/out/text.png', mimetype='image/png')
 
 
 create_from_text()
