@@ -12,8 +12,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, welcome to this service!'
 
-@app.route('/text')
+@app.route('/text2')
 def create_from_text():
-	#abr_main("salam salam")
-	#return "text"
-	return send_file('./out/text.png', mimetype='image/png')
+    print("salam")
+    abr_main("google gggggg")
+    #return "text"
+    return send_file('./out/text.png', mimetype='image/png')
