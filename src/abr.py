@@ -31,7 +31,7 @@ def main(inp_text = None):
     # find out where is the  context, is it twitter or telegram or normal text
     # this is the only function that interacts with user directly
 
-    mask = load_mask()
+    #mask = load_mask()
     # load  image file (png or jpg)
     # and process it if its necessary
     # and finally return a numpy array
@@ -50,7 +50,7 @@ def main(inp_text = None):
 
 
     wc = WordCloud(
-        mask=mask,
+        #mask=mask,
         background_color= general_config["BG_COLOR"],
         font_path = general_config["FONT"],
 
