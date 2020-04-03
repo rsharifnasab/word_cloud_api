@@ -15,11 +15,11 @@ def hello_world():
 
 @app.route('/text2')
 def create_from_text():
-	with app.app_context():
+#	with app.app_context():
 	    print("salam")
 	    abr_main("google gggggg")
 	    #return "text"
-	    return send_file('/home/rsharifnasab/word_cloud/out/text.png', mimetype='image/png')
+	    return send_file('out/text.png', mimetype='image/png')
 
 
-create_from_text()
+#create_from_text()
