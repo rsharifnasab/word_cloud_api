@@ -15,7 +15,7 @@ general_config = {
     # colorful image is experimental, it is for image that have white background and good colors
     # in most cases it is not useful!
     ##################
-    "MASK" : pre_path + "/assets/masks/circle",
+    "MASK" : pre_path + "assets/masks/circle",
     "NORMALIZE_MASK" : False,
 	"NORMALIZE_MASK_NUMBER" : 200,
     "COLORFUL_IMAGE" : False,
