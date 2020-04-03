@@ -50,7 +50,9 @@ def upload_file():
             flash('No selected file')
             return redirect(request.url)
         if file and allowed_file(file.filename):
-            abr_main(file.read())
+            text = str(file.read())
+            print("\n" * 2 + text + "\n" * 2 )
+            abr_main(text)
             return send_file('out/text.png', mimetype='image/png')
 
             #filename = secure_filename(file.filename)
