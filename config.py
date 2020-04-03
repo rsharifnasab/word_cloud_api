@@ -68,7 +68,7 @@ general_config = {
     #######################
     # change this boolean only if you have problem whit persian texts
     ######################
-    "ARABIC_RESHAPER" : False,
+    "ARABIC_RESHAPER" : not False,
 }
 
 telegram_config = {
